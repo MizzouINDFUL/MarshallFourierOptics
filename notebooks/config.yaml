@@ -1,0 +1,53 @@
+#======================================
+#           Propagator Params
+#======================================
+propagator:
+    distance: 10.0e-2
+
+    #Wavelength
+    wavelength: 660.0e-9
+
+    #SLM Info
+    pluto:
+        #Size       
+        #x_extent: 15.36e-3
+        #y_extent: 8.64e-3
+        x_extent: 8.96e-3
+        y_extent: 8.96e-3
+
+        #DOE Elements
+        Nx: 224
+        Ny: 224
+        #Nx: 1920
+        #Ny: 1080
+
+#======================================
+#           Trainer Params
+#======================================
+trainer:
+    max_epoch: 1000
+    gpus: 'None'
+    #gpus: 1
+    accelerator: 'ddp_spawn' 
+
+#======================================
+#           Lightning Params
+#======================================
+lightning:
+    batch_size: 1
+    lr: 3.0e-3      #Learning Rate
+
+#======================================
+#           Model Params
+#======================================
+model:
+    num_layers: 1
+
+#======================================
+#           Dataset Params
+#======================================
+data_module:
+    batch_size: 16
+    root : 'ddnn_mnist/'
+#PL_TORCH_DISTRIBUTED_BACKEND=gloo
+
