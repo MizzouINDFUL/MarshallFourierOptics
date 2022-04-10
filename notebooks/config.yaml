@@ -16,8 +16,8 @@ propagator:
         y_extent: 8.96e-3
 
         #DOE Elements
-        Nx: 224
-        Ny: 224
+        Nx: 445
+        Ny: 445
         #Nx: 1920
         #Ny: 1080
 
