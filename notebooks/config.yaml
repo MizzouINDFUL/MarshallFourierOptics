@@ -48,6 +48,6 @@ model:
 #======================================
 data_module:
     batch_size: 16
-    root : 'ddnn_mnist/'
+    #root : 'ddnn_mnist/'
 #PL_TORCH_DISTRIBUTED_BACKEND=gloo
 
